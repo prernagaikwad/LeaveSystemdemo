@@ -1,7 +1,6 @@
 package com.prernagaikwad.springboot.LeaveSystemdemo.Entity;
 
 import jakarta.persistence.*;
-
 import java.time.LocalDate;
 
 @Entity
@@ -25,7 +24,7 @@ public class Leave {
     private Long userId;  // Foreign key to User
 
 
-
+   // define constructor
 
     public Leave()
     {
