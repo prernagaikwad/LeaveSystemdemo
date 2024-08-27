@@ -11,6 +11,6 @@ import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    @Query("SELECT u FROM User u JOIN UserTeams ut ON u.id = ut.userId WHERE ut.teamId = :teamId")
+    @Query("select u from User u JOIN UserTeams ut ON u.id = ut.userId where ut.teamId = :teamId")
     List<User> findUsersByTeamId(@Param("teamId") Long teamId);
 }
